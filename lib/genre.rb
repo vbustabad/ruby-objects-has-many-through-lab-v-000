@@ -15,7 +15,7 @@ class Genre
   end
 
   def artists
-    self.songs.collect do |song|
+    @songs.collect do |song|
       song.artist
     end.uniq
   end
